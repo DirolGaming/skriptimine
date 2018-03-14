@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function line(){
+echo "------------------------------------"
+}
+_uid="$(id -u -n)"
+
+echo "Tere, $(echo $_uid)!"
+line
+
+echo "Hetkene kuupäev ja aeg: $(date)"
+line
