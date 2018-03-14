@@ -19,3 +19,13 @@ git init
 
 e) git remote add nimi aadress
 git remote add skriptimine https://github.com/dirolgaming/skriptimine.git
+
+Põhikasutamine:
+a) pane fail jälgimisele:
+git add failinimi
+
+b) lisa kirjelduse muudatuse kohta
+git commit -m "lühikirjelduse lause"
+
+c) lisa kaugrepositooriumi
+git push -uf skriptimine master
