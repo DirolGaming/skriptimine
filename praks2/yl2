@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Kirjutab kõik vastava info ilusti erinevatele ridadele.
+echo "Jaagop Janson"
+echo "ISP 117"
+echo "Täitsa omapärane ja huvitav aine. Saab ikka tarkust juurde."
+echo "Loodan, et aine läheb keerukamaks."
