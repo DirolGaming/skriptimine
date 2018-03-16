@@ -1,16 +1,7 @@
 #!/bin/bash
 #Tervitusskript koos veidike suhkruga.
 
-#loon endale line osa, mida saan kasutada, et eraldada minu skripti koostatud ridu teistest.
-
-function line(){
-echo "------------------------------------"
-}
-#loon variable UID, millega saan username kätte (seda saab ka lihtsalt $USER-ga ka.
-_uid="$(id -u -n)"
-
-echo "Tere, $(echo $_uid)!"
-line
-
-echo "Hetkene kuupäev ja aeg: $(date)"
-line
+# echo "Tere User!"
+echo "Tere "
+who am i | cut -c1 | tr [:lower:] [:upper:] ; who am i | cut -c2- #lõika tähed alates 2-st
+echo "!"
