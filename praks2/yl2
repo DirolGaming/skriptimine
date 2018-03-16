@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#Kirjutab kõik vastava info ilusti erinevatele ridadele.
-echo "Jaagop Janson"
-echo "ISP 117"
-echo "Täitsa omapärane ja huvitav aine. Saab ikka tarkust juurde."
-echo "Loodan, et aine läheb keerukamaks."
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi
+paste -d"." perenimi eesnimi > nimed
+cat nimed | sort | uniq
