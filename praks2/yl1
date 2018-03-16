@@ -3,5 +3,6 @@
 
 # echo "Tere User!"
 echo "Tere "
-who am i | cut -c1 | tr [:lower:] [:upper:] ; who am i | cut -c2- #lõika tähed alates 2-st
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `who am i | cut -c2-` #lõika tähed alates 2-st
 echo "!"
