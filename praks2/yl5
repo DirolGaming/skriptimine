@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Kirjutab vastava info erinevatele ridadele
+
+echo "Jaagop Janson"
+echo "ISP117"
+echo "Aine tundub huvitav, aga juhendid on kohati ebaselged ja dokumentatsioon puudulik"
+echo "Edasi otseselt ei saa öelda, et jõudnud olen, kuna dokumentatsioon ja juhised on olnud nii segased kohati, et olen pigem taandarengut teinud. Ootan huviga, mida see tund suudab veel pakkuda."
+
