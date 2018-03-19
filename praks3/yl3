@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Väljastan vastava info
+echo -n "$(hostname) at "
+echo -e `uptime | cut -f1 -d","`
