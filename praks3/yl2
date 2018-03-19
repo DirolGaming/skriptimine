@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Väljastan käsu, mis täidab ülesande vajaduse
+
+find /var/ -name "*.log" 2> /dev/null -exec wc -l {} \; | sort -rn
