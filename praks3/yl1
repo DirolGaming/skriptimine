@@ -1,5 +1,6 @@
 #!/bin/bash
 
 #Loon echo käsuga read, kus väljastatakse vastav info
-echo "Tänane kuupäev ja kalender: $(date)" #Lisan algusesse info ja siis käskluse
-echo "$(cal)" #lisasin selle uuele reale, kuna siis on kõige õigem formaat kõigel
+echo "Tänane kuupäev ja kalender:"
+date "+%A, %B %d, %Y" #Lisan algusesse info ja siis käsklu
+cal #lisasin selle uuele reale, kuna siis on kõige õigem formaat kõigel
