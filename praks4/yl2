@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#Küsin kasutajalt sisestust aluskandiku pikkusest
+echo "Sisestage palun aluskandiku pikkus sentimeetrites:"
+
+read pikkus
+
+#Küsin kasutajalt sisestust aluskandiku laiusest
+echo "Nüüd sisestage aluskandiku laius:"
+
+read laius
+
+#Küsin kasutajalt küpsiste pikkuse
+echo "Aitäh teile, palun sisestage nüüd küpsiste suurus pikkus, samuti sentimeetrites:"
+
+read kpikkus
+
+#Küsin kasutajalt küpsiste laiuse
+echo "Nüüd palun küpsiste laius sentimeetrites:"
+
+read klaius
+
+#Küsin kasutajalt mitu küpsist on pakis
+echo "Palun öelge, mitu küpsist on pakis:"
+
+read mitu
+
+#Küsin kasutajalt mitu kihti ta soovib
+echo "Mitu kihti te soovite?"
+
+read kihtidearv
+
+#Leian kandiku pindala
+pindala=`expr $pikkus \* $laius`
+
+#Leian küpsiste pindala
+kogus=`expr $kpikkus \* $klaius`
+
+#Leian, mitu küpsist on ühes kihis
+yheskihis=`expr $pindala / $kogus`
+
+#Väljastan kasutajale info, kus on kirjas, kõik, mis varasemalt arvutatud
+echo "Kandiku pindala on $pindala sentimeetrit ja küpsiste pindala $kogus sentimeetrit, ühes kihis on $yheskihis küpsist"
+
+#Leian, mitu pakki küpsiseid on vaja soetada, et täita üks kiht
+yheskihispakke=`expr $yheskihis / $mitu`
+
+#Arvutan, palju on vaja kokku osta pakke
+kokku=`expr $yheskihispakke \* $kihtidearv`
+
+#Väljastan, palju on vaja kokku soetada pake
+echo "Teil on vaja osta poest $kokku pakki"
+
