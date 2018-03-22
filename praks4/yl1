@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Küsin echo kaudu kasutajalt tema nime
+echo "Tere, palun sisestage oma nimi"
+
+#Ootab sisestust kasutajalt
+read varname
+
+#Kui sisestus kasutajalt saadud, väljastab selle Tere, $varname abil
+echo "Tere, $varname"
+
