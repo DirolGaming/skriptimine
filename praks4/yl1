@@ -4,8 +4,8 @@
 echo "Tere, palun sisestage oma nimi"
 
 #Ootab sisestust kasutajalt
-read varname
+read eesnimi perenimi
 
 #Kui sisestus kasutajalt saadud, väljastab selle Tere, $varname abil
-echo "Tere, $varname"
+echo "Tere, eesnimi on $eesnimi ja perenimi $perenimi"
 
