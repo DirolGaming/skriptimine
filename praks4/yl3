@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Palun sisestage reisijate arv:"
+
+read reisijad
+
+echo "Palun sisestage bussis olevate kohtade arv:"
+
+read kohad
+
+bussis=`expr $reisijad / $kohad`
+
+bkarv=`expr $bussis \* $kohad`
+
+mjaa=`expr $reisijad - $bkarv`
+
+echo "Täidetud busside arv: $bussis bussi; Maha jääb $mjaa inimest"
+
