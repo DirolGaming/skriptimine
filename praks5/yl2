@@ -1,0 +1,23 @@
+#!/bin/bash
+#Küsin kasutajalt a külge
+echo "Palun sisestage a külje värtus"
+
+read a
+#Küsin kasutajalt b külge
+echo "Palun sisestage b külje väärtus"
+
+read b
+#Küsin kasutajalt c külge
+echo "Palun sisestage c külje väärtus"
+
+read c
+#Väljastan kasutajale külgede väärtused
+echo "Külgede väärtused: a-$a b-$b c-$c"
+#Leian pool kolmnurga ümbermõõdust
+pindala1=`echo "scale=2;($a+$b+$c)/2" | bc`
+#Väljastan pool kolmnurga ümbermõõdust
+echo "Pool kolmnurga ümbermõõdust: $pindala1"
+#Leian pindala Heroni valemi alusel
+pindala2=`echo "scale=2;sqrt($pindala1*($pindala1-$a)*(pindala1-$b)*(pindala1-$c))" | bc`
+#Väljastan lõppvastuse kasutajale
+echo "Pindala = $pindala2"
