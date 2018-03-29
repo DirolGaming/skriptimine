@@ -1,0 +1,27 @@
+#!/bin/bash
+#Küsin kasutajalt infot esimese külje kohta
+echo "Palun sisestage täisnurkse kolmnurga 1. külje väärtus"
+
+read esimenekulg
+#Küsin kasutajalt infot teise külje kohta
+echo "Palun sisestage täisnurkse kolmnurga 2. külje väärtus"
+
+read teinekulg
+#Prindin välja kahe külje informatsiooni, et kasutaja näeks, kas need õiged
+echo "Esimene külg on $esimenekulg ja teine külg $teinekulg"
+#Leian esimese külje ruudu
+esimenetehe=`echo "scale=2;($esimenekulg^2)" | bc`
+#Leian teise külje ruudu
+teinetehe=`echo "scale=2;($teinekulg^2)" | bc`
+#Leian ruutude summa
+kolmastehe=`echo "scale=2;($esimenetehe+$teinetehe)" | bc`
+#Leian ruutude summa ruutjuure
+loppvastus=`echo "scale=2;sqrt($kolmastehe)" | bc`
+
+#Prindin välja lõppvastuse koos selgitusega
+echo "Tehted läbi viidud, kolmnurga hüpotenuus on $loppvastus."
+echo -n "Kolm tehet vastuse leidmiseks:"
+echo "Esimese külje ruut: $esimenetehe"
+echo "Teise külje ruut: $teinetehe"
+echo "Esimese ja teise külje ruutude summa: $kolmasteha"
+echo "Ruutude summa ruutjuur, ehk lõppvastus: $loppvastus"
