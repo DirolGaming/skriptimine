@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Pühapäev - 0, esmaspäev - 1... laupäev -6"
+
+echo "Palun sisesta millal sõidad ära:"
+
+read sa
+
+echo "Sisesta reisi ööpäevade arv:"
+
+read op
+#leian ausalt öeldes ise ka ei tea mida
+rpv=$(($op % 7))
+#liidan mingil põhjusel asja kokku
+tg=$(($sa + $rpv))
+
+#Väljastan tulemuse
+echo "Tagasi oled $tg päeval"
