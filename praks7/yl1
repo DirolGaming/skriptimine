@@ -1,9 +1,9 @@
 #!/bin/bash
-
+#Küsin kasutajalt vanust
 echo "Palun sisestage oma vanus."
 
 read vanus
-
+#Viin läbi vastavad IF loosungid
 if test $vanus -gt 0 -a $vanus -lt 11
 then
 	echo "Te olete laps."
@@ -17,6 +17,7 @@ elif test $vanus -ge 63
 then
 	echo "Olete senioor"
 else
+#loon veateate tooriku sõnumi
 	echo "Palun sisestage korrektne väljund"
 fi
 
