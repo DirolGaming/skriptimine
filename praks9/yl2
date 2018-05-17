@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+echo "Palun sisestage ridade arv:"
+
+read rida
+
+echo "Palun sisestage numbrite, tähemärkide, arv:"
+
+read tahed
+
+for (( i = 1; i <= $rida; i++))
+
+do
+
+	for (( j = 1; j <= $tahed; j++))
+
+	do
+		echo -n "$i "
+	done
+
+	echo ""
+done
