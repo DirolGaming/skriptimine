@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Palun sisestage soovitud ridade arv:"
+read rida
+echo "Palun sisestage soovitud karakterite arv reas:"
+read kar
+
+for ridad in 1 2 3 4 5
+
