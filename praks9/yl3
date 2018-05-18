@@ -2,7 +2,7 @@
 
 for ((r=1; r<=5;r++))
 do
-	echo -n "$r "
+	echo -n " "
 	if [ $r -eq 1 ]; then
 
 
