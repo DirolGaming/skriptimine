@@ -1,5 +1,19 @@
 #!/bin/bash
 
-#Loon echo käsuga read, kus väljastatakse vastav info
-echo "Tänane kuupäev ja kalender: $(date)" #Lisan algusesse info ja siis käskluse
-echo "$(cal)" #lisasin selle uuele reale, kuna siis on kõige õigem formaat kõigel
+echo "Palun sisestage arv:"
+
+read number
+
+answ=$((arv % 2))
+
+if [ $answ -eq 0 ]
+
+then
+
+echo "$number on paaris"
+
+else
+
+echo "Arv on paaritu."
+
+fi
