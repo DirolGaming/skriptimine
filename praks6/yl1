@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Palun sisestage arv:"
+
+read number
+
+answ=$((arv % 2))
+
+if [ $answ -eq 0 ]
+
+then
+
+echo "$number on paaris"
+
+else
+
+echo "Arv on paaritu."
+
+fi
