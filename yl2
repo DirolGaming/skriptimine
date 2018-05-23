@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Sisestage reisijate arv"
+
+read reisijad
+
+echo "Sisestage kohtade arv"
+
+read kohad
+
+bussid=$(($reisijad / $kohad))
+ylejaak=$(($reisijad % kohad))
+
+if test $ylejaak -gt 0
+then
+busse=$((bussid +1))
+fi
+
+echo "Vaja on $busse bussi."
