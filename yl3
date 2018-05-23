@@ -1,0 +1,23 @@
+#!/bin/bash
+
+osch=0
+echo "Sisesta OS1"
+read os1
+echo "Sisesta OS2"
+read os2
+
+echo "1. $os1"
+echo "2. $os2"
+echo "Tehke oma valik, kas 1. või 2."
+read osch
+if [ $osch -eq 1 ]
+then
+	echo "Te valisite $os1"
+else
+	if [ $osch -eq 2 ]
+then
+	echo "Te valisite $os2"
+else
+	echo "Teile ei meeldi kumbki valik?"
+fi
+fi
